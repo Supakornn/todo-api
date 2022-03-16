@@ -9,6 +9,7 @@ const TodoSchema = new mongoose.Schema({
   status: {
     type: String,
     default: "wating",
+    required: [true, "must fill status"],
     trim: true,
     maxLength: [20, "must be at least 20 characters"]
   }

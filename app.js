@@ -1,10 +1,9 @@
 const express = require("express");
 const app = express();
-const todo = require("./routes/todo");
+const todo = require("./routes/todoRoutes");
 require("dotenv").config();
 
 // db connect
-require("./db/connect");
 const mongoose = require("mongoose");
 mongoose
   .connect(process.env.DBURL)
