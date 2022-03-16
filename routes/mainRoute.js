@@ -6,10 +6,10 @@ const main = (req, res) => {
     Instagram: "supakornigm",
     HowtoUse: {
       "editfile_exmaple.env": "DBURL, PORT",
-      showAllTodo: { link: "/api/todo/getalltodo", method: "GET" },
-      showOneTodo: { link: "/api/todo/getonetodo", method: "GET" },
-      updateTodo: { link: "/api/todo/updatetodo/:id", method: "PATCH" },
-      deleteTodo: { link: "/api/todo/deletetodo/:id", method: "DELETE" }
+      showAllTodo: { link: "/todoapi/getall", method: "GET" },
+      showOneTodo: { link: "/todoapi/getone", method: "GET" },
+      updateTodo: { link: "/todoapi/update/:id", method: "PATCH" },
+      deleteTodo: { link: "/todoapi/delete/:id", method: "DELETE" }
     }
   });
 };

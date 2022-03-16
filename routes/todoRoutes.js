@@ -11,9 +11,9 @@ const {
 const mainRoute = require("./mainRoute");
 
 router.route("/").get(mainRoute);
-router.route("/getalltodo").get(getAllTodo);
-router.route("/getonetodo/:id").get(getOneTodo);
-router.route("/createtodo").post(createTodo);
-router.route("/updatetodo/:id").patch(updateTodo);
-router.route("/deletetodo/:id").delete(deleteTodo);
+router.route("/getall").get(getAllTodo);
+router.route("/getone/:id").get(getOneTodo);
+router.route("/create").post(createTodo);
+router.route("/update/:id").patch(updateTodo);
+router.route("/delete/:id").delete(deleteTodo);
 module.exports = router;
