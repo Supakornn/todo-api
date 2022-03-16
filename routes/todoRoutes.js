@@ -8,7 +8,9 @@ const {
   updateTodo,
   deleteTodo
 } = require("../controllers/todoController");
+const mainRoute = require("./mainRoute");
 
+router.route("/").get(mainRoute);
 router.route("/getalltodo").get(getAllTodo);
 router.route("/getonetodo/:id").get(getOneTodo);
 router.route("/createtodo").post(createTodo);
