@@ -17,7 +17,7 @@
 - Clone repo
 
 ```
-git clone https://github.com/H3X-T/todo-api/
+git clone https://github.com/H3XxT/todo-api/
 ```
 
 - Install package
